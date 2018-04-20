@@ -1,0 +1,19 @@
+*** Creating Trace Output File 'midterm2.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"midterm2.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "midterm2.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\midterm2.map" -o "midterm2.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'midterm2.axf'
+### ADS-LD Command File: 'midterm2.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'midterm2.lnp', Handle=0x00000254
+### Writing '.lnp' file
+### ADS-LD Command file 'midterm2.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

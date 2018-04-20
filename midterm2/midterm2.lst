@@ -1,0 +1,90 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000 00000001 
+                       N       EQU              1
+    2 00000000                 AREA             main, CODE, READONLY
+    3 00000000                 ENTRY
+    4 00000000                 EXPORT           __main
+    5 00000000         __main
+    6 00000000 E3A00000        MOV              R0, #0      ; COUNTER
+    7 00000004 E3A01000        MOV              R1, #0      ; first value
+    8 00000008 E3A02001        MOV              R2, #1      ; second value
+    9 0000000C E3A03001        MOV              R3, #1      ; SUM
+   10 00000010         
+   11 00000010         loop
+   12 00000010 E3520001        CMP              R2, #N
+   13 00000014 2A000004        BHS              out
+   14 00000018 E0813002        ADD              R3, R1, R2
+   15 0000001C E1A01002        MOV              R1, R2
+   16 00000020 E1A02003        MOV              R2, R3
+   17 00000024 E2800001        ADD              R0, R0, #1
+   18 00000028 EAFFFFF8        BAL              loop
+   19 0000002C         
+   20 0000002C         out
+   21 0000002C EAFFFFFE        BAL              out
+   22 00000030         
+   23 00000030         
+   24 00000030                 END
+Command Line: --debug --xref --apcs=interwork --depend=midterm2.d -omidterm2.o 
+-IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 
+1" --list=midterm2.lst midterm2.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 5 in file midterm2.s
+   Uses
+      At line 4 in file midterm2.s
+Comment: __main used once
+loop 00000010
+
+Symbol: loop
+   Definitions
+      At line 11 in file midterm2.s
+   Uses
+      At line 18 in file midterm2.s
+Comment: loop used once
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 2 in file midterm2.s
+   Uses
+      None
+Comment: main unused
+out 0000002C
+
+Symbol: out
+   Definitions
+      At line 20 in file midterm2.s
+   Uses
+      At line 13 in file midterm2.s
+      At line 21 in file midterm2.s
+
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+N 00000001
+
+Symbol: N
+   Definitions
+      At line 1 in file midterm2.s
+   Uses
+      At line 12 in file midterm2.s
+Comment: N used once
+1 symbol
+329 symbols in table
