@@ -3,8 +3,8 @@ Microprocessor Systems' Midterm Question 2:
     
     
     EN
-    Count the Fibonacci numbers between the 1 and N 
+    Counter for the Fibonacci numbers between the 1 and n 
     
     TR
-    1 den N' ye kadar kaç tane Fibonacci Sayısı olduğunu sayan kod.  
+    1'den n'ye kadar kaç adet Fibonacci Sayısı olduğunu sayan kod.  
     
